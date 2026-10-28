@@ -142,7 +142,7 @@ Sau khi hoàn tất, file `DuoDock_rootless.deb` sẵn sàng để cài đặt s
 ## 📄 Bản quyền / License
 
 Dự án được phân phối dưới giấy phép mã nguồn mở **MIT License**. Xem chi tiết tại [LICENSE](LICENSE).
-
+*Lưu ý, Phần mềm đang được phát triển và có thể gặp lỗi, bạn phải tự chịu trách nhiệm với hành động của bạn. Thiết bị tác giả sử dụng : iPhone 7 Plus - IOS 15.8.8, Jb Dopamine
 ---
 
 <p align="center">
