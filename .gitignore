@@ -1,0 +1,16 @@
+# Build artifacts
+*.deb
+*.dylib
+*.log
+build_bundle/
+pkg_root/
+.theos/
+obj/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

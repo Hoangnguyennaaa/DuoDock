@@ -1,0 +1,83 @@
+name: Build DuoDock DEB
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Rootless DEB Package
+    runs-on: macos-14
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Developer Tools
+        run: |
+          sudo xcode-select -s /Applications/Xcode.app
+          xcrun --sdk iphoneos --show-sdk-path
+
+      - name: Install build tools (ldid, dpkg)
+        run: |
+          brew install ldid dpkg
+
+      - name: Compile and Package DuoDock Rootless DEB
+        run: |
+          sed -i '' 's/\r$//' build_deb.sh
+          chmod +x build_deb.sh
+          set -o pipefail
+          ./build_deb.sh 2>&1 | tee build.log
+
+      - name: Output Build Log to Summary
+        if: always()
+        run: |
+          echo "## DuoDock Build Log" >> $GITHUB_STEP_SUMMARY
+          echo '```text' >> $GITHUB_STEP_SUMMARY
+          cat build.log >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload Build Log Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: duodock-build-log
+          path: build.log
+
+      - name: Upload DuoDock DEB Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DuoDock-rootless-deb
+          path: DuoDock_rootless.deb
+          if-no-files-found: error
+
+      - name: Create or Update GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        with:
+          tag_name: v1.0.5
+          name: "DuoDock v1.0.5 (Rootless iOS 15 - 16)"
+          draft: false
+          prerelease: false
+          body: |
+            ## 📱 DuoDock v1.0.5 - Modern Vertical Pill Dock for iOS
+            
+            ### ✨ Điểm mới trong v1.0.5 / What's New
+            - **Khắc phục triệt để lỗi hiển thị 2 nút tìm kiếm (Single Singleton Button Fix)**:
+              - Loại bỏ tình trạng nút Spotlight bị gắn vào cả `SBDockContainerView` lẫn `SBRootFolderView`.
+              - Kiến trúc Singleton với tag nhận diện duy nhất (`kDuoDockSearchButtonTag = 998822`) đảm bảo chỉ xuất hiện duy nhất 1 nút tìm kiếm chuẩn xác trên màn hình.
+            - **Đồng bộ phong cách nền & hiệu ứng với Dock (Sync Background With Dock)**:
+              - Tùy chọn `Đồng bộ nền & hiệu ứng với Dock` cho phép nút tìm kiếm kế thừa 100% phong cách kính của Dock (Kính Tối, Kính Sáng, Siêu Mỏng, Trong Suốt), độ mờ (`dockBlurAlpha`), viền sáng viên thuốc (`dockBorderEnabled`) và đổ bóng 3D (`dockShadowEnabled`).
+            - **Tùy biến màu sắc biểu tượng kính lúp (Custom Search Icon Color)**:
+              - Thêm tùy chọn chọn màu icon kính lúp: **Trắng**, **Đen**, **Xám**, **Xanh**, **Đỏ**, hoặc **Tự Động** (tự chuyển icon đen khi Dock dùng kính sáng và icon trắng khi dùng kính tối).
+            - **Vị trí thông minh Trên / Dưới Dock (Smart Auto-Switch)**:
+              - Khi Dock bị kéo sát đáy màn hình, nút tìm kiếm tự động nhảy lên **TRÊN đỉnh Dock** để không bị che khuất.
+            - **Độc lập cảm ứng & Tối ưu A10 / iPhone 7 Plus**:
+              - Không làm lag hoặc đơ cảm ứng màn hình chính.
+              - Tương thích tốt với iOS 15.0 - 16.7.x Rootless (Dopamine, palera1n, XinaA15).
+          files: DuoDock_rootless.deb
