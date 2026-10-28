@@ -14,6 +14,50 @@
 
 ---
 
+> [!WARNING]
+> ### ⚠️ Tuyên bố miễn trừ trách nhiệm / Disclaimer
+> - **DuoDock** được phát triển và chia sẻ hoàn toàn miễn phí vì mục đích nghiên cứu, học tập và cá nhân hóa giao diện người dùng.
+> - Việc bẻ khóa (Jailbreak) và can thiệp vào tệp hệ thống iOS luôn tiềm ẩn rủi ro nhất định. **Người dùng tự chịu hoàn toàn trách nhiệm đối với thiết bị của mình khi tiến hành cài đặt và sử dụng tweak này.**
+> - Tác giả **không chịu bất kỳ trách nhiệm pháp lý hoặc nghĩa vụ bồi thường nào** đối với các sự cố kỹ thuật có thể xảy ra, bao gồm nhưng không giới hạn ở: treo máy (bootloop), xung đột tweak dẫn đến Safe Mode, mất mát dữ liệu hoặc các lỗi phần mềm/phần cứng khác. Hãy luôn sao lưu dữ liệu quan trọng trước khi cài đặt.
+
+---
+
+## 📸 Hình ảnh minh họa / Screenshots Demo
+
+<!-- 
+  HƯỚNG DẪN CHÈN ẢNH:
+  1. Thêm ảnh chụp màn hình của bạn vào thư mục: assets/screenshots/
+     (ví dụ: assets/screenshots/home.png, assets/screenshots/spotlight.png, assets/screenshots/settings.png)
+  2. Thay thế đường dẫn placeholder bên dưới bằng tên tệp ảnh thật của bạn.
+-->
+
+<p align="center">
+  <table align="center">
+    <tr>
+      <td align="center" width="33%">
+        <b>Màn hình chính & Dock dọc</b><br>
+        <i>Vertical Pill Dock</i><br><br>
+        <img src="assets/screenshots/screenshot_dock.png" alt="Demo Dock dọc" width="240" onerror="this.src='https://via.placeholder.com/240x480?text=Ch%C3%A8n+%E1%BA%A3nh+Dock+d%E1%BB%8Dc+t%E1%BA%A1i+%C4%91%C3%A2y';"><br>
+        <sub>Đặt bám mép phải/trái</sub>
+      </td>
+      <td align="center" width="33%">
+        <b>Nút tìm kiếm Spotlight</b><br>
+        <i>Dynamic Search Button</i><br><br>
+        <img src="assets/screenshots/screenshot_search.png" alt="Demo Nút tìm kiếm" width="240" onerror="this.src='https://via.placeholder.com/240x480?text=Ch%C3%A8n+%E1%BA%A3nh+Spotlight+t%E1%BA%A1i+%C4%91%C3%A2y';"><br>
+        <sub>Đảo vị trí thông minh</sub>
+      </td>
+      <td align="center" width="33%">
+        <b>Giao diện Cài đặt (Settings)</b><br>
+        <i>Preferences Panel</i><br><br>
+        <img src="assets/screenshots/screenshot_settings.png" alt="Demo Cài đặt" width="240" onerror="this.src='https://via.placeholder.com/240x480?text=Ch%C3%A8n+%E1%BA%A3nh+C%C3%A0i+%C4%91%E1%BA%B7t+t%E1%BA%A1i+%C4%91%C3%A2y';"><br>
+        <sub>Đầy đủ tùy biến trực quan</sub>
+      </td>
+    </tr>
+  </table>
+</p>
+
+---
+
 ## 🌟 Giới thiệu / Overview
 
 **DuoDock** biến đổi hoàn toàn thanh Dock nằm ngang truyền thống của iOS thành một thanh Dock dọc dạng viên thuốc mềm mại bám cạnh màn hình (trái hoặc phải), tối ưu không gian hiển thị và đem lại trải nghiệm đa nhiệm hiện đại. 
@@ -22,6 +66,23 @@ Khác với các tweak dock trôi nổi dễ gây xung đột hoặc đơ cảm 
 - **Không bao giờ cướp touch (Safe Touch Passthrough)**: Giữ nguyên vẹn 100% cảm ứng của icon màn hình chính và AssistiveTouch.
 - **Không gây Safe Mode**: Tương thích hoàn hảo với vi xử lý A10 Fusion (iPhone 7 / 7 Plus) cũng như các dòng chip mới hơn chạy iOS 15 - 16.
 - **Tích hợp nút tìm kiếm Spotlight độc lập**: Mở nhanh Spotlight ngay cạnh thanh Dock với hiệu ứng nhún lò xo và rung phản hồi Haptic.
+
+---
+
+## 📱 Thiết bị đã thử nghiệm thực tế / Tested Devices
+
+Tweak đã trải qua các đợt kiểm thử thực tế kỹ lưỡng trên môi trường phần cứng và phần mềm cụ thể sau:
+
+| Thông số kiểm tra | Chi tiết thiết bị thử nghiệm |
+| :--- | :--- |
+| **Thiết bị (Device)** | **iPhone 7 Plus** (Mã phần cứng: `iPhone9,2` / `iPhone9,4`) |
+| **Vi xử lý (Chipset)** | **Apple A10 Fusion** (Kiến trúc ARM64) |
+| **Hệ điều hành (iOS Version)** | **iOS 15.8.2 / iOS 15.8.3** |
+| **Môi trường Jailbreak** | **Dopamine v2.x (Rootless)** |
+| **Quản lý gói (Package Manager)** | **Sileo v2.5+** / **Zebra** |
+| **Kết quả kiểm tra thực tế** | **Hoạt động hoàn hảo 100%**:<br>• Không lag giật, không nóng máy.<br>• Màn hình chính vuốt chạm mượt mà, AssistiveTouch không bị chặn.<br>• Nút Spotlight nảy lò xo và mở tức thì.<br>• Respring an toàn, tuyệt đối không bị văng Safe Mode. |
+
+*Ngoài thiết bị thử nghiệm thực tế trên, tweak tương thích tốt với mọi thiết bị ARM64 chạy iOS 15.0 đến 16.7.x (từ iPhone 6s/SE 1 đến iPhone 14 Pro Max).*
 
 ---
 
@@ -66,26 +127,15 @@ Khác với các tweak dock trôi nổi dễ gây xung đột hoặc đơ cảm 
 
 ---
 
-## 📱 Khả năng tương thích / Compatibility
-
-- **Hệ điều hành**: iOS 15.0 - 15.8.3, iOS 16.0 - 16.7.x
-- **Môi trường Jailbreak**:
-  - **Rootless (Khuyên dùng)**: Dopamine, palera1n (rootless), XinaA15 v2
-  - **Rootful**: palera1n (rootful)
-- **Thiết bị**:
-  - Hỗ trợ toàn diện từ chip **A10 Fusion** (iPhone 7, iPhone 7 Plus, iPad 6th/7th gen) đến chip **A16 Bionic** (iPhone 14 Pro, etc.).
-
----
-
 ## 📥 Hướng dẫn cài đặt / Installation
 
-### Cách 1: Cài đặt trực tiếp file .deb từ GitHub Releases (Khuyên dùng)
+### Cách cài đặt file .deb trực tiếp từ GitHub Releases (Khuyên dùng)
 
 1. Tải bản build mới nhất `DuoDock_rootless.deb` từ [GitHub Releases](https://github.com/Hoangnguyennaaa/DuoDock/releases/latest).
 2. Mở file `.deb` bằng ứng dụng quản lý gói **Sileo**, **Zebra** hoặc **Filza File Manager**.
 3. Chọn **Cài đặt (Get / Install)**.
 4. Nhấn **Khởi động lại SpringBoard (Respring)** sau khi cài đặt hoàn tất.
-5. Mở **Cài đặt (Settings)** -> chọn mục **DuoDock** để bắt đầu tùy chỉnh.
+5. Mở **Cài đặt (Settings)** -> chọn mục **DuoDock** để bắt đầu tùy chỉnh theo sở thích.
 
 ---
 
@@ -119,7 +169,7 @@ Khác với các tweak dock trôi nổi dễ gây xung đột hoặc đơ cảm 
 ### Yêu cầu môi trường
 - macOS 13+ (Ventura, Sonoma, Sequoia)
 - Xcode Command Line Tools
-- `ldid` và `dpkg` (cài qua `brew install ldid dpkg`)
+- `ldid` và `dpkg` (cài đặt qua: `brew install ldid dpkg`)
 
 ### Các bước biên dịch
 
@@ -135,7 +185,43 @@ chmod +x build_deb.sh
 ./build_deb.sh
 ```
 
-Sau khi hoàn tất, file `DuoDock_rootless.deb` sẵn sàng để cài đặt sẽ xuất hiện ngay tại thư mục gốc.
+Sau khi hoàn tất, file `DuoDock_rootless.deb` sẵn sàng cài đặt sẽ được tạo trực tiếp ngay tại thư mục gốc.
+
+---
+
+## 💖 Ủng hộ nhà phát triển / Donate & Support
+
+Nếu bạn yêu thích **DuoDock** và cảm thấy tweak này hữu ích cho trải nghiệm hằng ngày của bạn, bạn có thể ủng hộ tác giả một ly cà phê để tiếp thêm động lực phát triển và duy trì dự án!
+
+<!-- 
+  HƯỚNG DẪN CHÈN ẢNH QR:
+  1. Đặt ảnh mã QR ngân hàng hoặc ví MoMo vào: assets/donations/
+     (ví dụ: assets/donations/banking_qr.png hoặc assets/donations/momo_qr.png)
+  2. Cập nhật thông tin số tài khoản của bạn ở bảng bên dưới.
+-->
+
+<p align="center">
+  <table align="center">
+    <tr>
+      <td align="center" width="50%">
+        <b>Chuyển khoản Ngân hàng (QR Banking)</b><br><br>
+        <img src="assets/donations/banking_qr.png" alt="Mã QR Chuyển khoản Ngân hàng" width="220" onerror="this.src='https://via.placeholder.com/220x220?text=Ch%C3%A8n+QR+Ng%C3%A2n+H%C3%A0ng+t%E1%BA%A1i+%C4%91%C3%A2y';"><br><br>
+        <b>Ngân hàng</b>: <code>[Tên Ngân Hàng, ví dụ: MBBank / VCB]</code><br>
+        <b>Số tài khoản</b>: <code>[Số tài khoản của bạn]</code><br>
+        <b>Chủ tài khoản</b>: <code>[Tên chủ tài khoản]</code>
+      </td>
+      <td align="center" width="50%">
+        <b>Ví điện tử MoMo (MoMo QR)</b><br><br>
+        <img src="assets/donations/momo_qr.png" alt="Mã QR Ví MoMo" width="220" onerror="this.src='https://via.placeholder.com/220x220?text=Ch%C3%A8n+QR+MoMo+t%E1%BA%A1i+%C4%91%C3%A2y';"><br><br>
+        <b>Ví MoMo</b>: <code>[Số điện thoại MoMo]</code><br>
+        <b>Chủ tài khoản</b>: <code>[Tên người nhận]</code><br>
+        <b>Nội dung chuyển</b>: <code>Ung ho DuoDock</code>
+      </td>
+    </tr>
+  </table>
+</p>
+
+*Mọi sự ủng hộ và đóng góp ý kiến của các bạn đều là nguồn động viên rất lớn cho đội ngũ phát triển! Cảm ơn bạn rất nhiều!*
 
 ---
 
