@@ -20,24 +20,22 @@ Tweak tùy biến thanh Dock nằm ngang thành **thanh Dock dọc dạng viên 
 
 ## 📸 Hình ảnh Demo
 
-<!-- Đặt ảnh chụp màn hình của bạn vào thư mục: assets/screenshots/ -->
-
 <p align="center">
   <table align="center">
     <tr>
       <td align="center" width="33%">
-        <b>Dock dọc bám mép</b><br><br>
-        <img src="assets/screenshots/screenshot_dock.png" alt="Ảnh Dock dọc" width="220" onerror="this.src='https://via.placeholder.com/220x440?text=%E1%BA%A2nh+Dock+D%E1%BB%8Dc';"><br>
-        <sub>Bám mép trái hoặc phải</sub>
+        <b>Màn hình chính & Dock dọc</b><br><br>
+        <img src="assets/screenshots/screenshot_dock.png" alt="Ảnh Dock dọc" width="220"><br><br>
+        <sub>Bám mép phải hoặc trái</sub>
       </td>
       <td align="center" width="33%">
-        <b>Nút tìm kiếm Spotlight</b><br><br>
-        <img src="assets/screenshots/screenshot_search.png" alt="Ảnh Nút tìm kiếm" width="220" onerror="this.src='https://via.placeholder.com/220x440?text=%E1%BA%A2nh+N%C3%BAt+T%C3%ACm+Ki%E1%BA%BFm';"><br>
+        <b>Chi tiết Dock & Nút Spotlight</b><br><br>
+        <img src="assets/screenshots/screenshot_detail.png" alt="Chi tiết Dock và Nút tìm kiếm" width="220"><br><br>
         <sub>Tự đảo vị trí thông minh</sub>
       </td>
       <td align="center" width="33%">
         <b>Giao diện Cài đặt</b><br><br>
-        <img src="assets/screenshots/screenshot_settings.png" alt="Ảnh Cài đặt" width="220" onerror="this.src='https://via.placeholder.com/220x440?text=%E1%BA%A2nh+C%C3%A0i+%C4%90%E1%BA%B7t';"><br>
+        <img src="assets/screenshots/screenshot_settings.png" alt="Ảnh Cài đặt" width="220"><br><br>
         <sub>Tùy chỉnh trong Settings</sub>
       </td>
     </tr>
@@ -72,29 +70,13 @@ Tweak tùy biến thanh Dock nằm ngang thành **thanh Dock dọc dạng viên 
 
 ## 💖 Ủng hộ tác giả (Donate)
 
-Nếu bạn yêu thích tweak và muốn ủng hộ một ly cà phê để tác giả có thêm động lực cập nhật, bạn có thể quét mã QR dưới đây:
-
-<!-- Đặt ảnh mã QR của bạn vào thư mục: assets/donations/ -->
+Nếu bạn yêu thích tweak và muốn ủng hộ một ly cà phê để tác giả có thêm động lực cập nhật và duy trì dự án, bạn có thể quét mã QR bên dưới:
 
 <p align="center">
-  <table align="center">
-    <tr>
-      <td align="center" width="50%">
-        <b>Chuyển khoản Ngân hàng</b><br><br>
-        <img src="assets/donations/banking_qr.png" alt="QR Ngân hàng" width="200" onerror="this.src='https://via.placeholder.com/200x200?text=Ch%C3%A8n+QR+Ng%C3%A2n+H%C3%A0ng';"><br><br>
-        <b>Ngân hàng</b>: <code>[Tên ngân hàng của bạn]</code><br>
-        <b>Số tài khoản</b>: <code>[Số tài khoản]</code><br>
-        <b>Chủ tài khoản</b>: <code>[Tên chủ tài khoản]</code>
-      </td>
-      <td align="center" width="50%">
-        <b>Ví điện tử MoMo</b><br><br>
-        <img src="assets/donations/momo_qr.png" alt="QR MoMo" width="200" onerror="this.src='https://via.placeholder.com/200x200?text=Ch%C3%A8n+QR+MoMo';"><br><br>
-        <b>Số MoMo</b>: <code>[Số điện thoại MoMo]</code><br>
-        <b>Chủ tài khoản</b>: <code>[Tên chủ tài khoản]</code><br>
-        <b>Nội dung</b>: <code>Ung ho DuoDock</code>
-      </td>
-    </tr>
-  </table>
+  <img src="assets/donations/qr_donate.png" alt="Mã QR Ủng hộ MoMo / VietQR" width="260"><br><br>
+  <b>Chủ tài khoản</b>: <code>NGUYEN THE HOANG</code><br>
+  <b>Phương thức quét</b>: <code>Ứng dụng MoMo hoặc Mọi ứng dụng Ngân hàng (VietQR / Napas 247)</code><br>
+  <b>Nội dung chuyển</b>: <code>Ung ho DuoDock</code>
 </p>
 
 ---
