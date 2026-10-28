@@ -61,23 +61,56 @@ jobs:
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         with:
           tag_name: v1.0.5
-          name: "DuoDock v1.0.5 (Rootless iOS 15 - 16)"
+          name: "DuoDock v1.0.5 - Initial Public Release"
           draft: false
           prerelease: false
           body: |
-            ## 📱 DuoDock v1.0.5 - Modern Vertical Pill Dock for iOS
-            
-            ### ✨ Điểm mới trong v1.0.5 / What's New
-            - **Khắc phục triệt để lỗi hiển thị 2 nút tìm kiếm (Single Singleton Button Fix)**:
-              - Loại bỏ tình trạng nút Spotlight bị gắn vào cả `SBDockContainerView` lẫn `SBRootFolderView`.
-              - Kiến trúc Singleton với tag nhận diện duy nhất (`kDuoDockSearchButtonTag = 998822`) đảm bảo chỉ xuất hiện duy nhất 1 nút tìm kiếm chuẩn xác trên màn hình.
-            - **Đồng bộ phong cách nền & hiệu ứng với Dock (Sync Background With Dock)**:
-              - Tùy chọn `Đồng bộ nền & hiệu ứng với Dock` cho phép nút tìm kiếm kế thừa 100% phong cách kính của Dock (Kính Tối, Kính Sáng, Siêu Mỏng, Trong Suốt), độ mờ (`dockBlurAlpha`), viền sáng viên thuốc (`dockBorderEnabled`) và đổ bóng 3D (`dockShadowEnabled`).
-            - **Tùy biến màu sắc biểu tượng kính lúp (Custom Search Icon Color)**:
-              - Thêm tùy chọn chọn màu icon kính lúp: **Trắng**, **Đen**, **Xám**, **Xanh**, **Đỏ**, hoặc **Tự Động** (tự chuyển icon đen khi Dock dùng kính sáng và icon trắng khi dùng kính tối).
-            - **Vị trí thông minh Trên / Dưới Dock (Smart Auto-Switch)**:
-              - Khi Dock bị kéo sát đáy màn hình, nút tìm kiếm tự động nhảy lên **TRÊN đỉnh Dock** để không bị che khuất.
-            - **Độc lập cảm ứng & Tối ưu A10 / iPhone 7 Plus**:
-              - Không làm lag hoặc đơ cảm ứng màn hình chính.
-              - Tương thích tốt với iOS 15.0 - 16.7.x Rootless (Dopamine, palera1n, XinaA15).
+            ## 🚀 DuoDock v1.0.5 - Initial Public Release (Bản phát hành công khai đầu tiên)
+
+            Chào mừng bạn đến với bản phát hành công khai chính thức của **DuoDock**! 🎉
+
+            **DuoDock** là tweak tinh chỉnh giao diện SpringBoard hiện đại dành cho iOS 15.0 - 16.7.x (Rootless), biến đổi thanh Dock nằm ngang truyền thống thành một **thanh Dock dọc dạng viên thuốc độc lập** bám sát cạnh màn hình, đi kèm **nút tìm kiếm Spotlight thông minh**.
+
+            ---
+
+            ### ✨ Tính năng nổi bật / Highlights
+
+            - 📱 **Thanh Dock dọc dạng viên thuốc (Vertical Pill Dock)**:
+              - Tùy chọn đặt bám sát mép **Cạnh Trái** hoặc **Cạnh Phải** màn hình.
+              - Tự do tùy biến: Chiều rộng (Width), Chiều cao (Height), Lề mép (Margin), Bo góc viên thuốc (Corner Radius).
+
+            - 🔍 **Nút tìm kiếm Spotlight thông minh (Dynamic Spotlight Search Button)**:
+              - Nút tròn kính mờ đặt cạnh Dock, chạm để mở nhanh Spotlight với hiệu ứng co giãn lò xo và rung phản hồi (Haptic Feedback).
+              - **Tự động đảo vị trí thông minh**: Khi Dock bị kéo sát đáy màn hình, nút tìm kiếm tự động nhảy lên **TRÊN đỉnh Dock** để không bị che khuất.
+              - **Đồng bộ phong cách nền**: Tự động kế thừa màu kính mờ, độ trong suốt, viền sáng và đổ bóng 3D đồng bộ với thanh Dock.
+              - **Tùy biến màu icon**: Hỗ trợ chọn màu biểu tượng kính lúp (Trắng, Đen, Xám, Xanh, Đỏ hoặc Tự động đổi màu tương phản).
+
+            - 🎨 **Phong cách kính mờ & Đổ bóng 3D cao cấp (Deep Dock Styling)**:
+              - 4 kiểu nền kính mờ: **Kính Tối**, **Kính Sáng**, **Siêu Mỏng**, **Trong Suốt**.
+              - Tùy chỉnh độ trong suốt nền (Alpha: 0.1 - 1.0).
+              - Viền sáng bao quanh viên thuốc (Capsule Border) và Đổ bóng nổi khối 3D (3D Shadow).
+
+            - 📐 **Bố trí màn hình chính thông minh (Anti-overlap Grid)**:
+              - Tự động lùi lề lưới icon trang chủ sang một bên, chống đè icon lên Dock.
+              - Mở rộng hàng icon lấp đầy khoảng trống đáy màn hình cũ.
+              - Hỗ trợ tùy chỉnh từ **2 đến 8 icon** trên thanh Dock, tự chia đều khoảng cách.
+
+            - ⚡ **Độ ổn định & Tối ưu hóa cao**:
+              - Không cướp touch: Giữ nguyên 100% cảm ứng vuốt chạm màn hình chính và phím ảo AssistiveTouch.
+              - Không gây Safe Mode, hoạt động nhẹ nhàng và tiết kiệm pin.
+
+            ---
+
+            ### 📱 Tương thích / Compatibility
+            - **Hệ điều hành**: iOS 15.0 - 15.8.x, iOS 16.0 - 16.7.x
+            - **Kiến trúc**: Rootless ARM64 (Dopamine, palera1n, XinaA15 v2)
+            - **Kiểm thử thực tế**: Hoạt động mượt mà 100% trên **iPhone 7 Plus (Chip A10 Fusion) - iOS 15.8.x**.
+
+            ---
+
+            ### 📥 Hướng dẫn cài đặt / Installation
+            1. Tải tệp `DuoDock_rootless.deb` đính kèm bên dưới.
+            2. Mở file `.deb` bằng **Sileo**, **Zebra** hoặc **Filza** và chọn **Cài đặt**.
+            3. **Respring** thiết bị.
+            4. Mở ứng dụng **Cài đặt (Settings)** -> chọn mục **DuoDock** để kích hoạt và tùy chỉnh.
           files: DuoDock_rootless.deb
