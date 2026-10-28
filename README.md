@@ -228,7 +228,7 @@ Nếu bạn yêu thích **DuoDock** và cảm thấy tweak này hữu ích cho t
 ## 📄 Bản quyền / License
 
 Dự án được phân phối dưới giấy phép mã nguồn mở **MIT License**. Xem chi tiết tại [LICENSE](LICENSE).
-*Lưu ý, Phần mềm đang được phát triển và có thể gặp lỗi, bạn phải tự chịu trách nhiệm với hành động của bạn. Thiết bị tác giả sử dụng : iPhone 7 Plus - IOS 15.8.8, Jb Dopamine
+
 ---
 
 <p align="center">
